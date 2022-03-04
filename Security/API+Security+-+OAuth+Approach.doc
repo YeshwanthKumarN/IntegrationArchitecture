@@ -1,0 +1,496 @@
+Date: Fri, 4 Mar 2022 06:10:37 +0000 (UTC)
+Message-ID: <497043605.85.1646374237401@1048439729d4>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_84_2110209377.1646374237401"
+
+------=_Part_84_2110209377.1646374237401
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>API Security - OAuth Approach</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>API Security - OAuth Approach</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"APISecurity-OAuthApproach-ImplementationsOptions:"><stron=
+g>Implementations Options:</strong></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 240.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>&nbsp;</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>1- Client-Credentials (Basic)</strong=
+></p></td>
+<td class=3D"confluenceTd"><p><strong>2- Client-Credentials + On-behalf-of =
+</strong></p>
+<ul>
+<li><p>Only 4 API scopes to be used for all APIs</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p><strong>3- Client-Credentials + On-behalf-of<=
+/strong></p>
+<ul>
+<li><p>Each API has its own scope.</p></li>
+<li><p>Can be used to cover scenarios where resource level authorization an=
+d/or role base authorization is needed</p></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>OAuth Method</p></td>
+<td class=3D"confluenceTd"><p>Client-Credentials</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Client-Credentials</p></li>
+<li><p>On-behalf-of</p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Client-Credentials</p></li>
+<li><p>On-behalf-of</p></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Azure AD Enterprise Application</p></td>
+<td class=3D"confluenceTd"><p>N/A</p></td>
+<td class=3D"confluenceTd"><p>Mulesoft External API Gateway</p>
+<ul>
+<li><p>To exposed the following APIs (scopes)</p>
+<ul>
+<li><p>Highly Confidential</p></li>
+<li><p>Confidential</p></li>
+<li><p>Internal</p></li>
+<li><p>Public</p></li>
+</ul></li>
+</ul><p>Note: These four scopes would be reused by all APIs based on data c=
+riticality.</p></td>
+<td class=3D"confluenceTd"><p>Mulesoft External API Gateway</p>
+<ul>
+<li><p>To exposed APIs (scopes)</p>
+<ul>
+<li><p>API#1</p></li>
+<li><p>API#..</p></li>
+</ul></li>
+</ul><p>&nbsp;</p><p>Note: Each API would be have its own scope - so access=
+ can be segregated at a more granular level.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Azure AD Apps Registrations</p></td>
+<td class=3D"confluenceTd"><p>One application per external consumer applica=
+tion</p></td>
+<td class=3D"confluenceTd"><p>One application per external consumer applica=
+tion - the application would need to be given permissions to call the enter=
+prise application APIS/scopes.</p></td>
+<td class=3D"confluenceTd"><p>One application per external consumer applica=
+tion - the application would need to be given permissions to call the enter=
+prise application APIS/scopes.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Mulesoft Policies Configuration</p></td>
+<td class=3D"confluenceTd"><p>JWT</p>
+<ul>
+<li><p>Signature Validation</p></li>
+<li><p>Audience Claim</p>
+<ul>
+<li><p>APP ID URI</p></li>
+<li><p>ISS</p></li>
+</ul></li>
+<li><p><del>Client ID </del></p></li>
+<li><p>Expiration</p></li>
+<li><p>Not before</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>JWT</p>
+<ul>
+<li><p>Signature Validation</p></li>
+<li><p>Audience Claim</p>
+<ul>
+<li><p>API SCOPE</p></li>
+<li><p>ISS</p></li>
+</ul></li>
+<li><p>Expiration</p></li>
+<li><p>Not before</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>JWT</p>
+<ul>
+<li><p>Signature Validation</p></li>
+<li><p>Audience Claim</p>
+<ul>
+<li><p>API SCOPE</p></li>
+<li><p>ISS</p></li>
+</ul></li>
+<li><p>Expiration</p></li>
+<li><p>Not before</p></li>
+<li><p>Custom Claim (To be used to cover role and resource based scenarios)=
+</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"APISecurity-OAuthApproach-GuidelinesonAPISecurity"><strong>Guidel=
+ines on API Security</strong></h2>
+<ul>
+<li><p>Applications should only accept tokens related to their own identity=
+. </p></li>
+<li><p>APIs or applications should have their own identity. To achieve the =
+APIs should be registered in the Authorization server or Azure AD. </p></li=
+>
+<li><p>Tokens intended for one service should not be passed on to another s=
+ervice - unless this is used in the On-Behalf-Of flow in order to vend a to=
+ken that is still constrained to the identity of the first token.</p></li>
+<li><p>Validation of the token is done on the resource server, in this case=
+ Mulesoft. The following claims are validated: </p>
+<ul>
+<li><p>Token expiry </p></li>
+<li><p>Scopes/RoIes </p></li>
+<li><p>Audience </p></li>
+<li><p>Issuer of the token </p></li>
+</ul></li>
+<li><p>Additional claims may be checked in a token e.g. UPN in additional t=
+o the mandatory claims.</p></li>
+</ul>
+<h2 id=3D"APISecurity-OAuthApproach-OAuth2.0Flows"><strong>OAuth 2.0 Flows<=
+/strong></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Grant</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Notes</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Azure AD</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Client-Credentials</p><p>[Phase-1]</p></td>
+<td class=3D"confluenceTd"><p>Used in scenario involving two trusted partie=
+s; usually in machine-to-machine, or service-to-service communication witho=
+ut the involvement of a user that is tied to the identify of the initial to=
+ken.</p></td>
+<td class=3D"confluenceTd"><p>You can use the&nbsp;<a href=3D"https://tools=
+.ietf.org/html/rfc6749#section-4.4" class=3D"external-link" rel=3D"nofollow=
+">OAuth 2.0 client credentials grant</a>&nbsp;specified in RFC 6749, someti=
+mes called&nbsp;<em>two-legged OAuth</em>, to access web-hosted resources b=
+y using the identity of an application. This type of grant is commonly used=
+ for server-to-server interactions that must run in the background, without=
+ immediate interaction with a user. These types of applications are often r=
+eferred to as&nbsp;<em>daemons</em>&nbsp;or&nbsp;<em>service accounts</em>.=
+</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Authorization-Code</p><p><strong>[Not recomme=
+nded for phase-1] requires further analysis </strong></p></td>
+<td class=3D"confluenceTd"><p>Used in scenario involving two trusted partie=
+s; usually in machine-to-machine, or service-to-service communication witho=
+ut the involvement of a user that is tied to the identify of the initial to=
+ken.</p></td>
+<td class=3D"confluenceTd"><p>The OAuth 2.0 authorization code grant can be=
+ used in apps that are installed on a device to gain access to protected re=
+sources, such as web APIs. Using the Microsoft identity platform implementa=
+tion of OAuth 2.0, you can add sign in and API access to your mobile and de=
+sktop apps.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>On-behalf-of</p><p>[Phase-1]</p></td>
+<td class=3D"confluenceTd"><p>Used in scenarios involving machine-to-machin=
+e communication, but user context needs to be maintained within the call to=
+ the next system</p></td>
+<td class=3D"confluenceTd"><p>The OAuth 2.0 On-Behalf-Of flow (OBO) serves =
+the use case where an <strong>application </strong>invokes a service/web AP=
+I, which in turn needs to call another service/web API. The idea is to prop=
+agate the delegated user identity and permissions through the request chain=
+. For the middle-tier service to make authenticated requests to the downstr=
+eam service, it needs to secure an access token from the Microsoft identity=
+ platform, on behalf of the user.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-=
+manual-size"><img class=3D"confluence-embedded-image confluence-external-re=
+source" height=3D"1041" width=3D"781" src=3D"/wiki/download/attachments/186=
+0899164/Untitled%20Diagram.drawio.png?api=3Dv2" data-image-src=3D"/wiki/dow=
+nload/attachments/1860899164/Untitled%20Diagram.drawio.png?api=3Dv2" loadin=
+g=3D"lazy"></span>
+<p></p>
+<h2 id=3D"APISecurity-OAuthApproach-OwnershipofAzureADforAPIs"><strong>Owne=
+rship of Azure AD for APIs</strong></h2>
+<ul>
+<li><p>The owner is ultimately responsible and accountable for granting acc=
+ess to user or machine identities.</p></li>
+<li><p>The owner must consider;</p>
+<ul>
+<li><p>Owners are responsible for assigning permissions to application and =
+user identities.</p></li>
+<li><p>Owners are responsible for revoking permissions to application and u=
+ser identities.</p></li>
+<li><p>Owners are responsible for defining rules for accessing their resour=
+ce</p></li>
+<li><p>Define the terms of service for the relation between the client and =
+the API</p></li>
+<li><p>Understand the requirements of access to the data.</p></li>
+<li><p>Consult with the data owner or custodian of the data to understand t=
+he sensitivity of the data , they are granting a client access to .</p></li=
+>
+</ul></li>
+</ul>
+<p></p>
+<h1 id=3D"APISecurity-OAuthApproach-FutureNotes:">Future Notes:</h1>
+<h2 id=3D"APISecurity-OAuthApproach-ResourceLevelAuthorisation(Phase2)"><st=
+rong>Resource Level Authorisation (Phase 2)</strong></h2>
+<ul>
+<li><p>Authorization strategy depends upon the resource being accessed in a=
+n API.</p></li>
+<li><p>Defining permissions one every resource on the API.</p></li>
+<li><p>Used scopes/app roles for resource level authorization.</p></li>
+<li><p>Consumers requesting for a particular resource has to get the scope =
+pre-approved in Azure AD by the owner of the API and get it approved by Pla=
+tform team.</p></li>
+<li><p>JWT Validation Policy checks for the scopes in the token is the inte=
+nded scope for the endpoint or resource.</p></li>
+</ul>
+<h2 id=3D"APISecurity-OAuthApproach-Role-Based-Authorisation-Control(Phase3=
+)"><strong>Role-Based-Authorisation-Control (Phase 3)</strong></h2>
+<ul>
+<li><p>Application Registrations must be having at least one corresponding =
+Azure AD Group to represent users (also referred to as a 'boundary group').=
+ All users and services that access the application should be members of th=
+is group.</p></li>
+<li><p>The Azure AD groups should be bound or mapped to an appropriate 'App=
+Role' as part of the Application Registration.</p></li>
+<li><p>Permissions should be granted to users based on membership of variou=
+s 'AppRoles'.</p></li>
+<li><p>Applications/APls must check that tokens include the appropriate 'Ap=
+pRoles' claims before authorizing access.</p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_84_2110209377.1646374237401--
